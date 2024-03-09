@@ -1,0 +1,11 @@
+.triplebarButton{
+    font-size: 25px;
+    color: rgb(39, 61, 99);
+    height: 30px;
+    width: 30px;
+
+}
+
+.triplebarButton:hover {
+    cursor: pointer;
+  }

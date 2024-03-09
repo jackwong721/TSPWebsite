@@ -1,0 +1,90 @@
+.sidebar-container {
+    position: absolute;
+    top: 0;
+    z-index: 11
+  }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -450px; /* Start the sidebar off the screen */
+  width: 350px;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  transition: left 0.5s ease-in-out; /* Add a transition effect */
+  overflow-y: auto
+}
+
+.sidebar.open {
+  left: 0; /* Slide the sidebar into view */
+}
+
+.sidebar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 3px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.05);
+
+  }
+
+.sidebarTopContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.closeButton {
+    font-size: 25px;
+    width: 8%;
+    margin-bottom: 5px;
+}
+
+.closeButton:hover {
+    cursor: pointer;
+}
+
+
+.addButton {
+    font-size: 25px;
+}
+
+
+.addButton:hover {
+    cursor: pointer;
+}
+
+.addButtonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.request-login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+
+.loginSettingInfoButton-sidebar{
+  margin-right: 15px;
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.2);
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
